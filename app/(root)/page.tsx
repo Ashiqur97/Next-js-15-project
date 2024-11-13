@@ -8,8 +8,8 @@ export default async function Home({searchParams}:
 
     const posts = [{
       _createdAt: new Date(),
-      Views: 55,
-      author: {_id:1},
+      views: 55,
+      author: {_id:1,name: 'Ashique'},
       _id: 1,
       description: 'This is a description',
       image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fearth-water-drop.html&psig=AOvVaw2Z-ORPRnDJ97icexFNNGJU&ust=1731512976896000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjCh9qS14kDFQAAAAAdAAAAABAE',
