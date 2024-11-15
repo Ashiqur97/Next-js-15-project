@@ -6,10 +6,10 @@ export default async function Home({searchParams}:
   {searchParams:Promise <{query?:string}>}) {
     const query = (await searchParams).query;
 
-    const posts = [{
+    const post = [{
       _createdAt: new Date(),
       views: 55,
-      author: {_id:1,name: 'Ashique'},
+      author: {_id:1,name: 'Adrian'},
       _id: 1,
       description: 'This is a description',
       image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fearth-water-drop.html&psig=AOvVaw2Z-ORPRnDJ97icexFNNGJU&ust=1731512976896000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjCh9qS14kDFQAAAAAdAAAAABAE',
@@ -33,8 +33,8 @@ export default async function Home({searchParams}:
               </p>
 
               <ul className="mt- card-grid">
-             {posts?.length > 0 ? (
-              posts.map((post: StartupCardType) =>(
+             {post?.length > 0 ? (
+              post.map((post: StartupCardType) =>(
                 <StartupCard key={post?._id} post={post} />
               ))
              ) : (
